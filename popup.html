@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI_MCQ_N</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-box">
+    <div class="header">
+      <div class="brand">
+        <div class="logo">N</div>
+        <div>
+          <h2>AI_MCQ_N</h2>
+          <span id="status-indicator" class="status">● Active</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <div class="step">
+        <span class="step-num">1</span>
+        <span>Highlight MCQ question & options</span>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <span>Press <strong class="kbd">N</strong> on keyboard</span>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <span>Answer letter appears at your cursor!</span>
+      </div>
+    </div>
+
+    <div class="key-section">
+      <div class="key-header">
+        <label for="api-key-input">Personal Gemini API Key (Optional)</label>
+      </div>
+      <div class="key-row">
+        <input type="password" id="api-key-input" placeholder="Paste free AI Studio key..." autocomplete="off">
+        <button id="save-key-btn" class="btn">Save</button>
+      </div>
+      <div id="key-feedback" class="key-hint">Shared free quota is active.</div>
+      <a class="key-link" href="https://aistudio.google.com/app/apikey" target="_blank">Get free key from Google AI Studio &rarr;</a>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

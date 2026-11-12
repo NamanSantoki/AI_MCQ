@@ -1,0 +1,13 @@
+# Dependencies & test files
+node_modules/
+*.log
+scratch/
+test_*.js
+benchmark.js
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archives (optional, but keep git clean)
+*.zip

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="100%" stop-color="#050710" />
+    </linearGradient>
+
+    <!-- Brain Glow Gradient -->
+    <linearGradient id="brainGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- N Letter Gradient -->
+    <linearGradient id="nGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e0e7ff" />
+    </linearGradient>
+
+    <!-- Filter for Glow Effect -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Rounded App Icon Background -->
+  <rect width="128" height="128" rx="28" fill="url(#bgGrad)" />
+  <rect width="126" height="126" x="1" y="1" rx="27" fill="none" stroke="rgba(129, 140, 248, 0.3)" stroke-width="2" />
+
+  <!-- Brain Circuit Network (Left Hemisphere) -->
+  <g stroke="url(#brainGlow)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.95" filter="url(#neonGlow)">
+    <!-- Outer Lobes -->
+    <path d="M 64 26 C 52 24, 34 28, 28 42 C 22 56, 26 70, 32 78 C 30 88, 38 102, 52 102 C 58 102, 62 98, 64 96" />
+    <!-- Inner Gyri & Synapses -->
+    <path d="M 32 46 C 42 44, 52 50, 54 62" />
+    <path d="M 28 66 C 36 68, 44 62, 48 72" />
+    <path d="M 40 86 C 48 88, 54 82, 58 88" />
+
+    <!-- Brain Circuit Network (Right Hemisphere) -->
+    <path d="M 64 26 C 76 24, 94 28, 100 42 C 106 56, 102 70, 96 78 C 98 88, 90 102, 76 102 C 70 102, 66 98, 64 96" />
+    <path d="M 96 46 C 86 44, 76 50, 74 62" />
+    <path d="M 100 66 C 92 68, 84 62, 80 72" />
+    <path d="M 88 86 C 80 88, 74 82, 70 88" />
+  </g>
+
+  <!-- Neural Nodes / Dots -->
+  <circle cx="28" cy="42" r="3" fill="#38bdf8" />
+  <circle cx="100" cy="42" r="3" fill="#38bdf8" />
+  <circle cx="32" cy="78" r="3" fill="#818cf8" />
+  <circle cx="96" cy="78" r="3" fill="#818cf8" />
+  <circle cx="52" cy="102" r="2.5" fill="#c084fc" />
+  <circle cx="76" cy="102" r="2.5" fill="#c084fc" />
+  <circle cx="64" cy="26" r="3" fill="#67e8f9" />
+
+  <!-- Center Glow Orb -->
+  <circle cx="64" cy="64" r="22" fill="rgba(99, 102, 241, 0.25)" filter="url(#neonGlow)" />
+
+  <!-- Bold Central "N" Typography -->
+  <text x="64" y="74" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="34" 
+        font-weight="900" 
+        fill="url(#nGrad)" 
+        text-anchor="middle"
+        filter="drop-shadow(0 2px 8px rgba(0,0,0,0.8)) drop-shadow(0 0 12px rgba(129, 140, 248, 0.8))">
+    N
+  </text>
+</svg>
