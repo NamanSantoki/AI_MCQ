@@ -2,10 +2,9 @@
   "manifest_version": 3,
   "name": "AI_MCQ_N",
   "short_name": "AI_MCQ_N",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Select any MCQ on any webpage and press 'N' to instantly display the correct answer right at your cursor.",
   "permissions": [
-    "activeTab",
     "storage"
   ],
   "host_permissions": [
